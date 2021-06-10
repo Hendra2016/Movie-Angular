@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input ng-model="$ctrl.query"/>
+      </p>
+
+    </div>
+  </div>
+  <div class="row flex-row flex-nowrap">
+    
+    <div class="col-md-4" ng-repeat="movie in $ctrl.movie | filter:$ctrl.query" class="thumbnail phone-list-item">
+      <div class='card card-block'>
+      <p class="text-center">
+      <img ng-src="{{movie.imgUrl}}" alt="{{movie.name}}" />
+            <a href="#!/movie/{{movie.id}}" >{{movie.name}} </a></p>
+          </div>
+    </div>
+    <!-- <div class="col-md-12">
+      <ul class="phones">
+        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+            class="thumbnail phone-list-item">
+          <a href="#!/phones/{{phone.id}}"><img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />{{phone.name}}</a>
+        </li>
+      </ul>
+
+    </div> -->
+  </div>
+</div>
