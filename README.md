@@ -1,3 +1,5 @@
+Thank's too https://github.com/angular/angular-phonecat
+i just take the project and modified
 # AngularJS Phone Catalog Tutorial Application
 
 
@@ -234,11 +236,11 @@ app/                     --> all the source code of the app (along with unit tes
   lib/...                --> 3rd party JS/CSS libraries, including AngularJS and jQuery (copied over from `node_modules/`)
   core/                  --> all the source code of the core module (stuff used throughout the app)
     checkmark/...        --> files for the `checkmark` filter, including JS source code, specs
-    phone/...            --> files for the `core.phone` submodule, including JS source code, specs
+    movie/...            --> files for the `core.movie` submodule, including JS source code, specs
     core.module.js       --> the core module
   img/...                --> image files
-  phone-detail/...       --> files for the `phoneDetail` module, including JS source code, HTML templates, specs
-  phone-list/...         --> files for the `phoneList` module, including JS source code, HTML templates, specs
+  movie-detail/...       --> files for the `phoneDetail` module, including JS source code, HTML templates, specs
+  movie-list/...         --> files for the `phoneList` module, including JS source code, HTML templates, specs
   phones/...             --> static JSON files with phone data (used to fake a backend API)
   app.animations.css     --> hooks for running CSS animations with `ngAnimate`
   app.animations.js      --> hooks for running JS animations with `ngAnimate`
